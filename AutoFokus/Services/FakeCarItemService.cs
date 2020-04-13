@@ -15,7 +15,7 @@ namespace AutoFokus.Services
                 CarId = 1,
                 Brand = "Test",
                 Price = 100000,
-                Describtion = "I god stand",
+                Describtion = "I dårlig       stand",
                 Year = 2005
 
             };
