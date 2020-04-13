@@ -1,0 +1,41 @@
+﻿@*@{
+        ViewData["Title"] = "CarView";
+    }
+
+    <h1>CarView</h1>*@
+
+@model CarViewModel
+@{
+    ViewData["Title"] = "Bil Liste";
+} <div class="panel panel-default todo-panel">
+<div class="panel-heading">@ViewData["Title"]</div>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            @*<td>&#x2714;</td>*@
+            <td>Bil Nummer</td>
+            <td>Mærke</td>
+            <td>Pris</td>
+            <td>Beskrivelse</td>
+            <td>År</td>
+
+        </tr>
+    </thead>
+    @foreach (var car in Model.Cars)
+    {
+        <tr>
+            @*<td>
+                <input type="checkbox" class="done-checkbox">
+            </td>*@
+            <td>@car.CarId</td>
+            <td>@car.Brand</td>
+            <td>@car.Price</td>
+            <td>@car.Describtion</td>
+            <td>@car.Year</td>
+        </tr>
+    }
+</table>
+<div class="panel-footer add-item-form">
+    <!-- TODO: Add item form -->
+</div>
+</div>
